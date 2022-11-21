@@ -22,9 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm run test
+      - run: yarn ci
+      - run: yarn run build
+      - run: yarn run test
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.1
